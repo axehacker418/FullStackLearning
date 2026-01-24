@@ -1,0 +1,21 @@
+js is the programming language language of the web made for power web clinet side programming node js invent to use in backend like express library 
+var → Function-scoped, hoisted with undefined, can be re-declared & re-assigned
+
+let → Block-scoped, hoisted but not initialized, can be re-assigned (not re-declared)
+
+const → Block-scoped, hoisted but not initialized, cannot be re-assigned or re-declared
+
+normal function funName vs error function 
+
+usestrict
+this key in error function 
+window object 
+normal function use this 
+
+cALL BACK FUNCTION like timeout
+
+
+promisses resolve or reject 
+
+
+

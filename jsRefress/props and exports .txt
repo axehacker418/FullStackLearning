@@ -1,0 +1,9 @@
+single page web not relod one time html css pkgs api populate the components in same pages 
+
+named export or defult export const a=harry const b= rohan c= akash export default c :- import ui from ./module2 either change to .mjs or  export{a}
+export{b}  import dzs {a,b,c} from ./modules2
+
+props:- Properties custom component
+
+props can pas links object and group of objects props should be read only 
+proptypes defaut is requireed and normal props are the varibale in the react code 

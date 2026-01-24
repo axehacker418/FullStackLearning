@@ -1,0 +1,12 @@
+jsx java script XML 
+
+
+react has function based compnent and class based now react use function based compnent 
+
+jsx= almost html inside a script function 
+rectuse js inside html using {scriptvariableetc} or cammel case 
+jsx return only one compnent /tag 
+jsx fragment <> </>
+
+jsx compiled by babel react.createElement 
+

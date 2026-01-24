@@ -1,0 +1,220 @@
+⚛️ React JS – Structured Notes
+1️⃣ What is React?
+
+React JS is a JavaScript library used to build user interfaces, especially single-page applications (SPA).
+
+It is component-based
+
+Developed and maintained by Facebook (Meta)
+
+Focuses only on the UI layer
+
+👉 React is not a full framework
+
+2️⃣ Component-Based Architecture
+
+React breaks a complete web application into small, reusable components.
+
+Principle:
+
+Write once, use everywhere
+
+Example components:
+
+Header
+
+Footer
+
+Navbar
+
+Button
+
+Card
+
+Each component:
+
+Has its own logic
+
+Has its own UI
+
+Can be reused multiple times
+
+✅ Improves:
+
+Code reusability
+
+Maintainability
+
+Readability
+
+3️⃣ React: Library vs Framework
+🔹 React is a Library
+
+Handles only UI
+
+Flexible
+
+You choose other tools as needed
+
+🔹 Angular is a Framework
+
+Complete solution
+
+Built-in routing, HTTP, forms
+
+Opinionated structure
+
+Feature	React	Angular
+Type	Library	Framework
+Routing	External	Built-in
+Flexibility	High	Low
+Learning Curve	Easier	Steeper
+4️⃣ External Libraries in React
+
+React does not include everything by default.
+
+We install extra libraries when needed:
+
+Feature	Library
+Routing	react-router-dom
+State Management	Redux / Zustand
+HTTP Requests	Axios
+Styling	Tailwind / MUI
+
+Example:
+
+npm install react-router-dom
+
+5️⃣ Tools Required for React Development
+🔹 Node.js
+
+Required to run React tools
+
+Comes with npm
+
+🔹 Nodemon ❌ (Not required for React)
+
+Used for backend (Node.js)
+
+React uses hot reload automatically
+
+👉 Correct tools:
+
+Node.js
+
+npm / npx
+
+Code Editor (VS Code)
+
+6️⃣ npm vs npx
+🔹 npm (Node Package Manager)
+
+Used to install packages
+
+Packages stay in node_modules
+
+Example:
+
+npm install react
+
+🔹 npx (Node Package Executor)
+
+Runs packages without installing globally
+
+Best for creating React apps
+
+Example:
+
+npx create-react-app myApp
+
+
+✅ Advantage:
+
+No global installation needed
+
+Always uses latest version
+
+7️⃣ Props vs State (VERY IMPORTANT)
+🔹 Props (Properties)
+
+Used to pass data from parent to child
+
+Read-only
+
+Cannot be changed by child
+
+Example:
+
+<Child name="React" />
+
+🔹 State
+
+Used to manage component’s own data
+
+Mutable
+
+Changes cause re-render
+
+Example:
+
+const [count, setCount] = useState(0);
+
+Feature	Props	State
+Scope	Parent → Child	Inside component
+Mutable	❌ No	✅ Yes
+Re-render	❌	✅
+8️⃣ Types of Components
+🔹 Functional Components (Modern & Recommended)
+
+Simple JavaScript functions
+
+Use Hooks
+
+Less code
+
+function Hello() {
+  return <h1>Hello</h1>;
+}
+
+🔹 Class Components (Old)
+
+Use ES6 classes
+
+More complex
+
+Uses lifecycle methods
+
+class Hello extends React.Component {
+  render() {
+    return <h1>Hello</h1>;
+  }
+}
+
+
+👉 Hooks replaced class components
+
+9️⃣ Virtual DOM (Important Concept)
+
+React uses a Virtual DOM:
+
+Lightweight copy of real DOM
+
+Updates only changed parts
+
+Improves performance
+
+🔟 Key Advantages of React
+
+Fast rendering
+
+Reusable components
+
+Strong community
+
+SEO friendly (with SSR)
+
+Large job market
+
+🎯 Interview One-Line Summary
+
+React is a component-based JavaScript library used to build fast and reusable user interfaces using a virtual DOM.
