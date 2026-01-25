@@ -1,11 +1,12 @@
 //always named compnant to Capital lettername
 import PropTypes from "prop-types";
 
-
 export default function Navbar(props) {
   return (
     <>
-      <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
+      <nav
+        className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
+      >
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             {props.title}
@@ -70,7 +71,7 @@ export default function Navbar(props) {
                 </button>
               </li>
             </ul>
-            <form className="d-flex" role="search">
+            <form className="d-flex mx-2" role="search" >
               <input
                 className="form-control me-2"
                 type="search"
@@ -81,16 +82,23 @@ export default function Navbar(props) {
                 Search
               </button>
             </form>
-            <div class="form-check form-switch mx-4 my-2">
-  <input className="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch/>
-  <label className="form-check-label" for="checkNativeSwitch">
-    Native switch haptics
-  </label>
-</div>
+            <div
+              class={`form-check form-switch my-2 text-${props.mode === "light" ? "dark" : "light"}`}
+            >
+              <input
+                className="form-check-input"
+                onClick={props.togglemode}
+                type="checkbox"
+                value=""
+                id="checkNativeSwitch"
+                switch
+              />
+              <label className="form-check-label" htmlFor="checkNativeSwitch  mx-2">
+                {props.mode==='dark'? 'light':'dark'} mode
+              </label>
+            </div>
           </div>
-          
-  </div>
-        
+        </div>
       </nav>
     </>
   );
