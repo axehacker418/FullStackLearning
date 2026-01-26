@@ -5,7 +5,10 @@ export default function Navbar(props) {
   return (
     <>
       <nav
-        className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
+        className={`navbar navbar-expand-lg navbar-${props.mode} `} style={{backgroundColor: props.mode==='light'? '#fffee9': "Black",
+    border: '1px solid',
+    borderColor: props.mode === 'light' ? '#b89f2d' : '#333'
+        }}
       >
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
