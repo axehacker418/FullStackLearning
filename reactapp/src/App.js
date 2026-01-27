@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import TextForm from './components/TextForm'
 import About from './components/About'
+import {HashRouter,Routes,Route} from 'react-router-dom'
 
 export default function App() {
   const [mode,setmode]=useState('light');
@@ -18,10 +19,18 @@ export default function App() {
   }
   return (
     <div>   
-    <Navbar title="TextUtils" mode={mode} togglemode={togglemode}/>
+      <Navbar title="TextUtils" mode={mode} togglemode={togglemode}/>
+      
+    
    
     <div className='container my-3'>
-      <TextForm heading="enter text here" mode={mode}/>
+      <HashRouter>
+        <Routes>
+          <Route path='/' element= {<TextForm heading="enter text here" mode={mode}/>
+} />
+        </Routes>
+        
+      </HashRouter>
       <About mode={mode} />
     </div>
 
