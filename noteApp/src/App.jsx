@@ -7,7 +7,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row bg-amber-100 text-white gap-6 p-6">
+    <div className="h-screen flex flex-col lg:flex-row bg-amber-100 text-white gap-6 p-6">
 
       {/* FORM SECTION */}
       <form
@@ -43,16 +43,30 @@ function App() {
       </form>
 
       {/* NOTES SECTION */}
-      <div className="w-full lg:w-1/3 p-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
-          <div className="bg-white p-6 rounded-2xl h-32"></div>
-          <div className="bg-white p-6 rounded-2xl h-32"></div>
-          <div className="bg-white p-6 rounded-2xl h-32"></div>
-          <div className="bg-white p-6 rounded-2xl h-32"></div>
+      <div className="  w-full h-full lg:w-1/3 p-6">
+      <h1 className='text-3xl text-pink-300 font-bold italic'>Keep Notes!</h1>
+        <div className=" border-t-1 border-emerald-600 pt-5 mt-5 flex flex-wrap gap-5 mt-5 h-full overflow-auto">
+          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
+          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
+          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
+          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
+          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
+          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
+          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
+          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
+          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
+          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
+          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
+          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
+          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
+          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
+          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
+          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
         </div>
       </div>
 
 
+      {/* grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4  */}
     </div>
   )
 }
