@@ -1,4 +1,4 @@
-import React, { use, useState } from 'react'
+import React, {  useState } from 'react'
 
 function App() {
   const [note, setnote] = useState({ title: "", des: "" });
@@ -20,7 +20,7 @@ function App() {
         className="flex flex-col lg:h-screen lg:flex-row w-full lg:w-2/3 gap-6 rounded-2xl p-6"
       >
         {/* IMAGE */}
-        <div className="flex w-full lg:w-1/2 items-center justify-center">
+        <div className="flex w-full lg:w-1/2 items-center justify-center ">
           <img
             className="h-40 lg:h-60"
             src="https://static.vecteezy.com/system/resources/thumbnails/049/578/155/small/a-black-and-white-drawing-of-a-man-writing-png.png"
@@ -30,7 +30,7 @@ function App() {
 
         {/* INPUTS */}
         <div className='flex flex-col lg:w-1/2 '>
-          <h1 className='flex text-3xl text-cyan-700 font-bold italic pb-5'>Add Notes!</h1>
+          <h1 className='flex text-3xl text-cyan-700 font-bold italic pb-5 '>Add Notes!</h1>
           <div className="flex gap-4 rounded-2xl px-4 max-[80vh] overflow-auto bg-green-50 w-full items-center flex-col">
 
             <input
