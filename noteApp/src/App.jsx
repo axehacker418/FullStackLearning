@@ -88,7 +88,6 @@ function App() {
           <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
           <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
           <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
-          <div className="bg-white p-6 rounded-2xl w-40 h-52"></div>
           <div className="bg-white p-6 rounded-2xl w-40 h-52"></div> */}
         </div>
       </div>
